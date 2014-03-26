@@ -47,6 +47,7 @@
         //create image buffers
         CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)[img TIFFRepresentation], NULL);
         CGImageRef imageRef =  CGImageSourceCreateImageAtIndex(source, 0, NULL);
+        CFRelease(source);
         
         vImage_Buffer buffer1, buffer2;
         buffer1.width = buffer2.width = CGImageGetWidth(imageRef);
@@ -66,6 +67,9 @@
             if (buffer2.data) {
                 free(buffer2.data);
                 buffer2.data=NULL;
+            }
+            if (imageRef) {
+                CGImageRelease(imageRef);
             }
         }else{
             
@@ -102,6 +106,9 @@
                 CGContextFillRect(ctx, CGRectMake(0, 0, buffer1.width, buffer1.height));
             }
             
+            if (imageRef) {
+                CGImageRelease(imageRef);
+            }
             //create image from context
             imageRef = CGBitmapContextCreateImage(ctx);
             
@@ -146,6 +153,9 @@
         [rep setSize:img.size];
         NSImage *nsImage = [[NSImage alloc] initWithSize:img.size];
         [nsImage addRepresentation:rep];
+        
+        CGImageRelease(imageRef);
+
         return nsImage;
     }
     
