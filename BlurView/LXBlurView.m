@@ -130,7 +130,7 @@
 }
 
 
-//this blue method is for testing only
+//this blur method is for testing only
 - (NSImage*)blurimage1:(NSImage*)img withRadius:(CGFloat)radius withIteration:(int)iterations tintColor:(NSColor *)tintColor
 {
     //image must be nonzero size
