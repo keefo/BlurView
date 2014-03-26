@@ -187,6 +187,9 @@
     [[NSString stringWithFormat:@"%.0ffps", (1.0/(end-beg))] drawAtPoint:NSMakePoint(10, self.bounds.size.height-25) withAttributes:@{NSForegroundColorAttributeName:[NSColor whiteColor]}];
 }
 
+#pragma mark -
+//TODO: make this method faster
+//TODO: make this mehtod can snapshot CALayer
 - (NSImage *)prepareUnderlyingSnapshot
 {
     [self setHidden:YES];

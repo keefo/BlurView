@@ -23,6 +23,7 @@
 		A7557A7B1898E12A00FA2082 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7557A7A1898E12A00FA2082 /* QuartzCore.framework */; };
 		A7557A871898E8CE00FA2082 /* LXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7557A861898E8CE00FA2082 /* LXBlurView.m */; };
 		A7557A8E1898F89600FA2082 /* LXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7557A8D1898F89600FA2082 /* LXImageView.m */; };
+		A79B399F18E2A710005DA54B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A79B399E18E2A710005DA54B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		A7557A861898E8CE00FA2082 /* LXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXBlurView.m; sourceTree = "<group>"; };
 		A7557A8C1898F89600FA2082 /* LXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXImageView.h; sourceTree = "<group>"; };
 		A7557A8D1898F89600FA2082 /* LXImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXImageView.m; sourceTree = "<group>"; };
+		A79B399E18E2A710005DA54B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A7557A731898DE4D00FA2082 /* 0.gif */,
+				A79B399E18E2A710005DA54B /* README.md */,
 				A7557A471898DE1B00FA2082 /* BlurView-Info.plist */,
 				A7557A481898DE1B00FA2082 /* InfoPlist.strings */,
 				A7557A4B1898DE1B00FA2082 /* main.m */,
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79B399F18E2A710005DA54B /* README.md in Resources */,
 				A7557A4A1898DE1B00FA2082 /* InfoPlist.strings in Resources */,
 				A7557A581898DE1B00FA2082 /* Images.xcassets in Resources */,
 				A7557A501898DE1B00FA2082 /* Credits.rtf in Resources */,
