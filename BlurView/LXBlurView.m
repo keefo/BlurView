@@ -136,6 +136,8 @@
     else{
         CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)[img TIFFRepresentation], NULL);
         CGImageRef imageRef =  CGImageSourceCreateImageAtIndex(source, 0, NULL);
+        CFRelease(source);
+        
         CIImage *imageToBlur = [CIImage imageWithCGImage:imageRef];
         
         CIFilter *_blurFilter;
